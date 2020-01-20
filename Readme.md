@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Егор Байдашев](https://up.htmlacademy.ru/htmlcss/27/user/684117).
-* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/id983299).
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 
