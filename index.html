@@ -16,7 +16,7 @@
       </nav>
       <div class="header-logo">
         <a href="#">
-          <img src="img/svg-sedona/logo-sedona.svg" alt="Логотип" width="140" height="72">
+          <img src="img/svg-sedona/logo-sedona.svg" alt="Логотип сайта Седона" width="140" height="72">
         </a>
       </div>
     </header>
@@ -26,8 +26,8 @@
           <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <img src="img/background-index.jpg" alt="Каньон" width="1200" height="800">
-        <img src="img/svg-sedona/intro-welcome.svg" alt="Welcome to Sedona" width="459" height="353">
+        <img src="img/background-index.jpg" alt=" Фото каньона в Седоне" width="1200" height="800">
+        <img src="img/svg-sedona/intro-welcome.svg" alt="Изображение-приглашение в Седону Welcome to Sedona" width="459" height="353">
       </section>
       <section class="reasons">
         <h2 class="visually-hidden">Причины</h2>
@@ -56,7 +56,7 @@
           </ul>
         </div>
         <div class="reasons-second">
-          <img src="img/Devils-bridge.jpg" alt="Мост Дьявола" width="800" height="256">
+          <img src="img/Devils-bridge.jpg" alt="Фото Моста Дьявола" width="800" height="256">
           <div>
             <h3>Там есть Мост дьявола</h3>
             <span>— №2 —</span>
@@ -86,14 +86,38 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения в седоне</p>
-        <a href="#" class="search-btn">Поиск гостиницы в седоне</a>
-        <div class="search-form">
-          <!--Здесь будет форма-->
-          <form></form>
+        <button class="button">Поиск гостиницы в седоне</button>
+        <div class="search-modal">
+          <form class="search-form" action="#" method="post">
+            <div>
+              <label for="date-check-in">Дата заезда:</label>
+              <input id="date-check-in" type="text" name="date-check-in" value="24 апреля 2017" autofocus required>
+              <span class="icon-calendar"></span>
+            </div>
+            <div>
+              <label for="date-check-out">Дата выезда:</label>
+              <input id="date-check-out" type="text" name="date-check-out" value="04 июля 2017" required>
+              <span class="icon-calendar"></span>
+            </div>
+            <div>
+              <label for="number-of-adults">Взрослые:</label>
+              <button class="button-minus">-</button>
+              <input id="number-of-adults" type="text" name="number-of-adults" value="2" required>
+              <button class="button-plus">+</button>
+            </div>
+            <div>
+              <label for="number-of-children">Дети:</label>
+              <button class="button-minus">-</button>
+              <input id="number-of-children" type="text" name="number-of-children" value="0" required>
+              <button class="button-plus">+</button>
+            </div>
+            <button class="submit">Найти</button>
+          </form>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
+        <img src="img/map.jpg" width="1718" height="748" alt="Седона на карте">
       </section>
     </main>
     <footer class="footer">
@@ -102,9 +126,15 @@
         <p>Тел: +7(495) 666-02-66</p>
       </div>
       <ul class="social">
-        <li class="social-item twitter"></li>
-        <li class="social-item facebook"></li>
-        <li class="social-item youtube"></li>
+        <li class="social-item twitter" aria-label="Твиттер">
+          <a href="#"></a>
+        </li>
+        <li class="social-item facebook" aria-label="Фэйсбук">
+          <a href="#"></a>
+        </li>
+        <li class="social-item youtube" aria-label="Ютуб">
+          <a href="#"></a>
+        </li>
       </ul>
       <div class="copyrights">
         <p class="copyrights-text">Website by</p>
