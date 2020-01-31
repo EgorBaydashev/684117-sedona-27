@@ -11,7 +11,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a class="header-active">Гостиницы</a></li>
         </ul>
       </nav>
       <div class="header-logo">
@@ -24,7 +24,57 @@
       <h1 class="visually-hidden">Выбор гостиницы</h1>
       <section class="selection-block">
         <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
-        <form class="selection-form"></form>
+        <form class="selection-form" action="#" method="post">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <label for="swimming-pool"></label>
+                <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+              </li>
+              <li>
+                <label for="parking"></label>
+                <input type="checkbox" name="parking" id="parking">
+              </li>
+              <li>
+                <label for="wi-fi"></label>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="type-of-housing">
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+                <label for="hotel"></label>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+              </li>
+              <li>
+                <label for="motel"></label>
+                <input type="checkbox" name="motel" id="motel" checked>
+              </li>
+              <li>
+                <label for="apartments"></label>
+                <input type="checkbox" name="apartments" id="apartments" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="price">
+            <h3>Стоимость в сутки(р):</h3>
+            <div class="price-interval">
+              <label for="min-price">От</label>
+              <input type="text" name="min-price" id="min-price" value="0">
+              <label for="max-price">До</label>
+              <input type="text" name="max-price" id="max-price" value="3000">
+            </div>
+            <div class="price-range">
+              <div class="bar"></div>
+              <span class="range-min"></span>
+              <span class="range-max"></span>
+            </div>
+            <button class="submit">Показать</button>
+          </div>
+        </form>
       </section>
       <section class="sorting-block">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
@@ -35,7 +85,7 @@
           <p>Сортировка:</p>
           <ul class="sorting-list">
             <li>
-              <a class="active">По цене</a>
+              <a class="sorting-active">По цене</a>
             </li>
             <li>
               <a href="#">По типу</a>
