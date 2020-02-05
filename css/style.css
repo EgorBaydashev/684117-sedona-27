@@ -73,6 +73,52 @@ a {
   text-align: center;
 }
 
+.reasons-first-block {
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.reasons-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reasons-number,
+.reasons-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.reasons-advice-list {
+  list-style: none;
+}
+
+.advice-list-item {
+  text-align: center;
+}
+
+.reasons-second-block {
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.reasons-other-list {
+  list-style: none;
+  background-color: #eeeeee;
+}
+
+.other-list-item {
+  text-align: center;
+}
+
+.white {
+  color: #ffffff;
+}
+
 .search {
   text-align: center;
 }
@@ -164,8 +210,109 @@ a {
   color: #000000;
 }
 
-.selection-form {
-  display: none;
+.selection-block {
+  background-image: url("../img/background-hotels.jpg");
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-size: 1200px 800px;
+  color: #ffffff;
+}
+
+.infrastructure,
+.types {
+  border: none;
+  text-align: left;
+}
+
+.infrastructure-title,
+.types-title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.infrastructure-list,
+.types-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.price-title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-interval label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.price-interval input {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.price-btn {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+}
+
+.price-btn:focus,
+.price-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting-results {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting-variants {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list-item a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sorting-list-item .sorting-active {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sorting-list-item a:focus,
+.sorting-list-item a:hover {
+  color: #81b3d2;
+}
+
+.sorting-list-item a:active {
+  color: #000000;
+  text-decoration: none;
 }
 
 .results-list {
