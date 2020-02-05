@@ -57,7 +57,7 @@ a {
   background-color: #ffffff;
 }
 
-.intro-text h1 {
+.intro-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -65,7 +65,7 @@ a {
   text-align: center;
 }
 
-.intro-text p {
+.intro-item {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -77,14 +77,14 @@ a {
   text-align: center;
 }
 
-.search h2 {
+.search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
 }
 
-.search p {
+.search-item {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -125,7 +125,7 @@ a {
   text-align: center;
 }
 
-.contacts p {
+.contacts-item {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -157,7 +157,7 @@ a {
   text-align: center;
 }
 
-.copyrights p {
+.copyrights-item {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -176,7 +176,7 @@ a {
   text-align: left;
 }
 
-.item-info h3 {
+.item-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -193,7 +193,7 @@ a {
   color: #b2b2b2;
 }
 
-.item-info p {
+.item-text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -238,7 +238,7 @@ a {
   text-align: right;
 }
 
-.item-rank p {
+.item-rank-text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
