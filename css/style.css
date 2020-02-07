@@ -393,4 +393,153 @@ a {
   background-color: #f2f2f2;
 }
 
+/*-----СЕТОЧНЫЕ СТИЛИ-------*/
 
+html,
+body {
+  width: 1200px;
+  min-height: 2762px;
+}
+
+.header {
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.header-navigation {
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.header-list {
+  width: 1200px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.list-item-left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 239px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.left-item {
+  margin-right: 244px;
+}
+
+.list-item-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 239px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header-logo {
+  width: 140px;
+  height: 72px;
+}
+
+.intro {
+  min-height: 725px;
+}
+
+.intro-pictures {
+  min-height: 510px;
+  background:
+    url("../img/svg-sedona/intro-welcome.svg") no-repeat 50% 50%,
+    url("../img/svg-sedona/intro-mask.svg") no-repeat 50% 100%,
+    url("../img/background-index.jpg") no-repeat 0 20%;
+  background-size: 459px 353px, 1200px 59px, 1200px 800px;
+  background-color: #81b3d2;
+}
+
+.intro-text {
+  min-height: 216px;
+}
+
+.footer {
+  min-height: 120px;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.contacts {
+  width: 205px;
+  padding-left: 123px;
+  margin-right: 177px;
+  min-height: 60px;
+  text-align: left;
+}
+
+.contacts-item {
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  width: 150px;
+  min-height: 60px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.copyrights {
+  width: 197px;
+  padding-right: 100px;
+  margin-left: auto;
+  display: flex;
+  min-height: 60px;
+}
+
+.results-block {
+  min-height: 453px;
+}
+
+.results-list {
+  margin: 0;
+  padding: 0;
+}
+
+.results-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.results-item:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.results-item-wrapper {
+  display: flex;
+  margin-left: 72px;
+  margin-right: 72px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.item-wrapper-pic {
+  margin-right: 30px;
+}
+
+.item-rank {
+  margin-left: auto;
+}
+
+.item-info-wrapper {
+  display: flex;
+}
