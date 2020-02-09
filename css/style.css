@@ -215,6 +215,7 @@ a {
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: 1200px 800px;
+  background-position: 0 50%;
   color: #ffffff;
 }
 
@@ -395,13 +396,13 @@ a {
 
 /*-----СЕТОЧНЫЕ СТИЛИ-------*/
 
-html,
-body {
+.container {
   width: 1200px;
-  min-height: 2762px;
+  margin: 0 auto;
 }
 
 .header {
+  position: relative;
   /* Временно для сетки */
   min-height: 56px;
 }
@@ -445,12 +446,16 @@ body {
 }
 
 .header-logo {
+  position: absolute;
+  top: 0;
+  left: 45%;
   width: 140px;
   height: 72px;
 }
 
 .intro {
   min-height: 725px;
+  margin-top: -15px;
 }
 
 .intro-pictures {
@@ -465,6 +470,35 @@ body {
 
 .intro-text {
   min-height: 216px;
+  margin-top: -16px;
+}
+
+.reasons-first {
+  display: flex;
+}
+
+.reasons-advice-list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 330px;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-second {
+  display: flex;
+}
+
+.reasons-other-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 253px;
+}
+
+.other-list-item {
+  text-align: center;
+  width: 400px;
 }
 
 .footer {
@@ -505,6 +539,58 @@ body {
   margin-left: auto;
   display: flex;
   min-height: 60px;
+}
+
+.selection-block {
+  margin-top: -15px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.selection-form {
+  display: flex;
+}
+
+.infrastructure {
+  width: 254px;
+}
+
+.types {
+  margin-right: 100px;
+  width: 254px;
+}
+
+.infrastructure-list,
+.types-list {
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.sorting-results {
+  margin-right: 48px;
+}
+
+.sorting-variants {
+  display: flex;
+  align-items: baseline;
+}
+
+.sorting-list {
+  margin: 0;
+  margin-left: 39px;
+  padding: 0;
+  display: flex;
+}
+
+.sorting-list-item {
+  margin-right: 31px;
 }
 
 .results-block {
