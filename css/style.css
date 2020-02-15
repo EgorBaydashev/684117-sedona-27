@@ -7,20 +7,29 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -121,6 +130,7 @@ a {
 
 .search {
   text-align: center;
+  padding-top: 54px;
 }
 
 .search-title {
@@ -128,6 +138,8 @@ a {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .search-item {
@@ -135,18 +147,254 @@ a {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
+  margin-bottom: 47px;
+  white-space: pre;
 }
 
 .search .button {
+  display: inline-block;
+  width: 568px;
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   background-color: #766357;
   border: none;
+  padding-top: 33px;
+  padding-bottom: 31px;
+}
+
+.search-modal {
+  position: absolute;
+  top: 0;
+  left: 316px;
+  padding: 55px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.search-form {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.block-check-in,
+.block-check-out,
+.block-wrapper {
+  margin-bottom: 29px;
+}
+
+.block-check-in input[type="text"],
+.block-check-out input[type="text"] {
+  width: 333px;
+  margin-left: 20px;
+  padding-left: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.block-check-in input[type="text"]:hover,
+.block-check-out input[type="text"]:hover {
+  background: #ebebeb;
+}
+
+.block-check-in input[type="text"]:focus,
+.block-check-out input[type="text"]:focus {
+  width: 329px;
+  padding-left: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.block-check-out input[type="text"] {
+  margin-left: 17px;
+}
+
+.block-check-in,
+.block-check-out {
+  position: relative;
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}
+
+.icon-calendar path {
+  fill: #a9a9a9;
+}
+
+.icon-calendar:focus path,
+.icon-calendar:hover path {
+  fill: #000000;
+}
+
+.icon-calendar:active path {
+  fill: #81b3d2;
+}
+
+.block-wrapper {
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.block-adults,
+.block-children {
+  display: flex;
+  align-items: center;
+}
+
+.block-adults {
+  margin-right: 53px;
+}
+
+.block-adults input[type="text"],
+.block-children input[type="text"] {
+  width: 38px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.block-adults input[type="text"]:hover,
+.block-children input[type="text"]:hover {
+  background: #ebebeb;
+}
+
+.block-adults input[type="text"]:focus,
+.block-children input[type="text"]:focus {
+  width: 34px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.form-button {
+  position: relative;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  border: none;
+  width: 38px;
+  height: 38px;
+}
+
+.button-minus {
+  margin-left: 41px;
+  outline: none;
+}
+
+.button-plus {
+  outline: none;
+}
+
+.button-minus::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.button-minus:hover::before {
+  background-color: #000000;
+}
+
+.button-minus:active::before {
+  background-color: #81b3d2;
+}
+
+.button-plus:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.button-plus:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+}
+
+.button-plus:hover:before,
+.button-plus:hover:after {
+  background-color: #000000;
+}
+
+.button-plus:active:before,
+.button-plus:active:after {
+  background-color: #81b3d2;
+}
+
+.block-children .button-minus {
+  margin-left: 27px;
+}
+
+.search-button {
+  display: inline-block;
+  width: 458px;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #81b3d2;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  outline: none;
+}
+
+.search-button:focus,
+.search-button:hover {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 .button:focus,
@@ -159,12 +407,8 @@ a {
   color: #857871;
 }
 
-.search-modal {
-  display: none;
-}
-
 .footer {
-  background-color: rgba(254, 254, 254, 0.9);
+  position: relative;
 }
 
 .contacts {
@@ -180,14 +424,13 @@ a {
 
 .social {
   list-style: none;
-  text-align: center;
 }
 
 .social-item {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
-  margin: 6px;
+  margin-bottom: 8px;
 }
 
 .social-item:focus,
@@ -399,17 +642,12 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
 .header {
   position: relative;
-  /* Временно для сетки */
-  min-height: 56px;
-}
-
-.header-navigation {
-  /* Временно для сетки */
-  min-height: 56px;
 }
 
 .header-list {
@@ -417,8 +655,6 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 70px;
 }
 
 .list-item-left {
@@ -448,14 +684,9 @@ a {
 .header-logo {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 530px;
   width: 140px;
   height: 72px;
-}
-
-.intro {
-  min-height: 725px;
-  margin-top: -15px;
 }
 
 .intro-pictures {
@@ -469,8 +700,21 @@ a {
 }
 
 .intro-text {
-  min-height: 216px;
-  margin-top: -16px;
+  margin-top: -2px;
+  text-align: center;
+  padding-top: 61px;
+}
+
+.intro-title {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 380px;
+  margin-right: 380px;
+}
+
+.intro-item {
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .reasons-first {
@@ -501,48 +745,117 @@ a {
   width: 400px;
 }
 
-.footer {
-  min-height: 120px;
-}
-
 .footer-wrapper {
   display: flex;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: rgba(254, 254, 254, 0.9);
+  width:1200px;
+}
+
+.footer-position {
+  position: absolute;
+  bottom: 0;
 }
 
 .contacts {
-  width: 205px;
-  padding-left: 123px;
+  margin-left: 123px;
   margin-right: 177px;
-  min-height: 60px;
   text-align: left;
 }
 
 .contacts-item {
   margin: 0;
-  padding: 0;
+}
+
+.contacts-item a {
+  color: #000000;
 }
 
 .social {
-  width: 150px;
-  min-height: 60px;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+}
 
+.social-item {
+  position: relative;
+}
+
+.twitter::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 17px;
+  height: 15px;
+  background-image: url("../img/svg-sedona/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.facebook::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/svg-sedona/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/svg-sedona/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.twitter:active::before {
+  opacity: 0.3;
+}
+
+.facebook:active::before {
+  opacity: 0.3;
+}
+
+.youtube:active::before {
+  opacity: 0.3;
 }
 
 .copyrights {
-  width: 197px;
-  padding-right: 100px;
-  margin-left: auto;
+  width: 196px;
+  margin-right: 100px;
+  margin-left: 228px;
   display: flex;
-  min-height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrights-item {
+  margin: 0;
+}
+
+.copyrights a:focus path,
+.copyrights a:hover path {
+  fill: #81b3d2;
+}
+
+.copyrights a:active path {
+  fill: #bdbbbc;
 }
 
 .selection-block {
-  margin-top: -15px;
   padding-left: 73px;
   padding-right: 73px;
   padding-bottom: 30px;
@@ -603,6 +916,12 @@ a {
 }
 
 .results-item {
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -610,13 +929,16 @@ a {
   border-top: 1px solid #e5e5e5;
 }
 
+/*
 .results-item-wrapper {
   display: flex;
+  align-items: center;
   margin-left: 72px;
   margin-right: 72px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+*/
 
 .item-wrapper-pic {
   margin-right: 30px;
@@ -626,6 +948,60 @@ a {
   margin-left: auto;
 }
 
+.item-title {
+  margin: 0;
+  padding: 0;
+}
+
 .item-info-wrapper {
   display: flex;
+}
+
+.item-info-wrapper div:first-of-type {
+  margin-right: 6px;
+}
+
+.item-text {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+.item-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  box-sizing: border-box;
+}
+
+.btn-book {
+  width: 142px;
+}
+
+.item-rank-wrapper {
+  margin-bottom: 47px;
+}
+
+.item-rank-star {
+  display: inline-block;
+  width: 18px;
+  min-height: 17px;
+  background-image: url("../img/svg-sedona/star.svg");
+  background-repeat: no-repeat;
+
+}
+
+.item-rank-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 110px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
