@@ -32,49 +32,49 @@
           <fieldset class="infrastructure">
             <legend class="infrastructure-title">Инфраструктура:</legend>
             <ul class="infrastructure-list">
-              <li>
-                <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
-                <label for="swimming-pool">Бассейн</label>
+              <li class="infrastructure-item">
+                <input class="item-input visually-hidden" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+                <label class="item-label" for="swimming-pool">Бассейн</label>
               </li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
+              <li class="infrastructure-item">
+                <input class="item-input visually-hidden" type="checkbox" name="parking" id="parking">
+                <label class="item-label" for="parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-fi</label>
+              <li class="infrastructure-item">
+                <input class="item-input visually-hidden" type="checkbox" name="wi-fi" id="Wi-fi">
+                <label class="item-label" for="Wi-fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="types">
             <legend class="types-title">Тип жилья:</legend>
             <ul class="types-list">
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
+              <li class="types-item">
+                <input class="item-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                <label class="item-label" for="hotel">Гостиница</label>
               </li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
+              <li class="types-item">
+                <input class="item-input visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                <label class="item-label" for="motel">Мотель</label>
               </li>
-              <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
+              <li class="types-item">
+                <input class="item-input visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
+                <label class="item-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <div class="price">
             <h3 class="price-title">Стоимость в сутки(р):</h3>
             <div class="price-interval">
-              <label for="min-price">От</label>
-              <input type="text" name="min-price" id="min-price" value="0">
-              <label for="max-price">До</label>
-              <input type="text" name="max-price" id="max-price" value="3000">
+              <label class="min-price">От<input type="number" name="min-price" value="0"></label>
+              <label class="max-price">До<input type="number" name="max-price" value="3000"></label>
             </div>
             <div class="price-range">
-              <div class="bar"></div>
-              <span class="range-min"></span>
-              <span class="range-max"></span>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <span class="range-toggle range-toggle-min"></span>
+              <span class="range-toggle range-toggle-max"></span>
             </div>
             <button class="price-btn" type="submit">Показать</button>
           </div>
@@ -100,8 +100,8 @@
           </ul>
         </div>
         <div class="sorting-switcher">
-          <span></span>
-          <span></span>
+          <span class="icon-up-dir"></span>
+          <span class="icon-down-dir active"></span>
         </div>
       </section>
       <section class="results-block">
@@ -114,11 +114,11 @@
             <div class="item-info">
               <h3 class="item-title">Amara Resort & Spa</h3>
               <div class="item-info-wrapper">
-                <div>
+                <div class="wrapper-left-block">
                   <p class="item-text">Гостиница</p>
                   <a class="item-btn btn-more" href="#">Подробнее</a>
                 </div>
-                <div>
+                <div class="wrapper-right-block">
                   <p class="item-text">от 4000 р.</p>
                   <a class="item-btn btn-book" href="#">Забронировать</a>
                 </div>
@@ -141,12 +141,12 @@
             <div class="item-info">
               <h3 class="item-title">Desert Quail Inn</h3>
               <div class="item-info-wrapper">
-              <div>
+              <div class="wrapper-left-block">
                 <p class="item-text">Мотель</p>
                 <a class="item-btn btn-more" href="#">Подробнее</a>
               </div>
-              <div>
-                <p class="item-text">от 2000 р.</p>
+              <div class="wrapper-right-block">
+                <p class="item-text">от 3000 р.</p>
                 <a class="item-btn btn-book" href="#">Забронировать</a>
               </div>
               </div>
@@ -167,11 +167,11 @@
             <div class="item-info">
               <h3 class="item-title">Villas at Poco Diablo</h3>
               <div class="item-info-wrapper">
-              <div>
+              <div class="wrapper-left-block">
                 <p class="item-text">Апартаменты</p>
                 <a class="item-btn btn-more" href="#">Подробнее</a>
               </div>
-              <div>
+              <div class="wrapper-right-block">
                 <p class="item-text">от 2000 р.</p>
                 <a class="item-btn btn-book" href="#">Забронировать</a>
               </div>
