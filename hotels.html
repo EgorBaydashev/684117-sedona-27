@@ -12,10 +12,10 @@
     <header class="header">
       <nav class="header-navigation">
         <ul class="header-list">
-            <li class="list-item-left"><a href="#">Информация</a></li>
-            <li class="list-item-left left-item"><a href="#">Фото и видео</a></li>
-            <li class="list-item-right"><a href="#">Карта штата</a></li>
-            <li class="list-item-right active"><a href="#">Гостиницы</a></li>
+            <li class="list-item"><a href="#">Информация</a></li>
+            <li class="list-item"><a href="#">Фото и видео</a></li>
+            <li class="list-item"><a href="#">Карта штата</a></li>
+            <li class="list-item active"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
       <div class="header-logo">
@@ -66,8 +66,8 @@
           <div class="price">
             <h3 class="price-title">Стоимость в сутки(р):</h3>
             <div class="price-interval">
-              <label class="min-price">От<input type="number" name="min-price" value="0"></label>
-              <label class="max-price">До<input type="number" name="max-price" value="3000"></label>
+              <label class="min-price">От<input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До<input type="text" name="max-price" value="3000"></label>
             </div>
             <div class="price-range">
               <div class="scale">
@@ -83,10 +83,10 @@
       <section class="sorting-block">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <div class="sorting-results">
-          <p>Найдено: 3</p>
+          <p class="sorting-results-text">Найдено: 3</p>
         </div>
         <div class="sorting-variants">
-          <p>Сортировка:</p>
+          <p class="sorting-variants-text">Сортировка:</p>
           <ul class="sorting-list">
             <li class="sorting-list-item">
               <a class="sorting-active">По цене</a>
@@ -191,8 +191,8 @@
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="contacts">
-          <p class="contacts-item">#visitSEDONA<br>
-          Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
+          <p class="contacts-item">#visitSEDONA</p>
+          <p class="contacts-tel">Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
         </div>
         <ul class="social">
           <li class="social-item twitter" aria-label="Твиттер">
