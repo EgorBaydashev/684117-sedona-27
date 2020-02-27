@@ -197,7 +197,7 @@ input[type="radio"].visually-hidden {
 .reasons-first-block .reasons-text {
   margin: 0 auto;
   margin-top: 20px;
-  white-space: pre;
+ /* white-space: pre;*/
 }
 
 .reasons-first-pic {
@@ -250,7 +250,9 @@ input[type="radio"].visually-hidden {
 
 .icon-house .reasons-text {
   margin: 0 auto;
-  white-space: pre;
+  padding-left: 73px;
+  padding-right: 73px;
+ /* white-space: pre;*/
 }
 
 .icon-food::before {
@@ -319,6 +321,8 @@ input[type="radio"].visually-hidden {
   width: 400px;
   padding-top: 46px;
   padding-bottom: 58px;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .reasons-second-block .reasons-title {
@@ -330,7 +334,6 @@ input[type="radio"].visually-hidden {
 .reasons-second-block .reasons-text {
   margin: 0 auto;
   margin-top: 22px;
-  white-space: pre;
 }
 
 .reasons-other-list {
@@ -359,7 +362,8 @@ input[type="radio"].visually-hidden {
 .text3 {
   margin: 0 auto;
   margin-top: 20px;
-  white-space: pre;
+  padding-left: 95px;
+  padding-right: 95px;
 }
 
 .text4 {
@@ -367,6 +371,8 @@ input[type="radio"].visually-hidden {
   width: 264px;
   margin: 0 auto;
   margin-top: 20px;
+  padding-left: 69px;
+  padding-right: 69px;
 }
 
 .text5 {
@@ -433,6 +439,51 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
+@keyframes form_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: form_opacity 0.6s;
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .search-form {
   font-size: 14px;
   line-height: 21px;
@@ -446,13 +497,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 29px;
 }
 
-/*
 .block-check-in label {
   display: inline-block;
   vertical-align: middle;
   width: 87px;
   white-space: nowrap;
-  margin-right: 20px;
 }
 
 .block-check-out label {
@@ -460,9 +509,8 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   width: 88px;
   white-space: nowrap;
-  margin-right: 19px;
+  margin-right: 3px;
 }
-*/
 
 .block-check-in input[type="text"],
 .block-check-out input[type="text"] {
@@ -692,6 +740,15 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.map-footer {
+  background-image: url("../img/map.jpg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 593px;
+  border: 0;
+}
+
 .footer-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -735,7 +792,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  list-style: none;
   margin: 0;
   padding: 0;
   padding-top: 3px;
@@ -1217,7 +1273,8 @@ input[type="radio"].visually-hidden {
 .results-item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 26px;
   padding-left: 72px;
   padding-right: 72px;
   border-bottom: 1px solid #e5e5e5;
@@ -1229,16 +1286,15 @@ input[type="radio"].visually-hidden {
 
 .item-wrapper-pic {
   margin-right: 30px;
-  height: 90px;
 }
 
 .item-info {
   text-align: left;
-  margin-top: 28px;
-  margin-bottom: 29px;
 }
 
 .item-title {
+  display: block;
+  width: 544px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
